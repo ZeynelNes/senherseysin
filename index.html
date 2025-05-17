@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sana Özel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="background-overlay"></div>
+
+  <div class="container">
+    <h1>Canım Aşkım</h1>
+
+    <!-- Not Alanları -->
+    <div class="note">
+      <button class="toggle">Not 1</button>
+      <div class="note-content">Seninle geçirdiğim her an bir mucize.</div>
+    </div>
+    <div class="note">
+      <button class="toggle">Not 2</button>
+      <div class="note-content">Gözlerin bir deniz gibi, içine çekiyor beni.</div>
+    </div>
+    <div class="note">
+      <button class="toggle">Not 3</button>
+      <div class="note-content">Her şey seninle güzel.</div>
+    </div>
+
+    <!-- Müzik Kontrol -->
+    <div class="music-controls">
+      <button id="playPause">⏯</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <!-- Mesaj Gönderme Alanı -->
+    <div class="chat">
+      <input type="text" id="messageInput" placeholder="Bir şeyler yaz..." />
+      <button id="sendMessage">Gönder</button>
+      <div id="messages"></div>
+    </div>
+  </div>
+
+  <!-- Tepki Görseli -->
+  <img id="reactionImage" src="" alt="" class="reaction hidden" />
+
+  <audio id="audio" src=""></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
