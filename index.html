@@ -3,43 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sana Özel</title>
+  <title>Senin İçin</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div id="background-overlay"></div>
 
-  <div class="container">
-    <h1>Canım Aşkım</h1>
+  <!-- Arka Plan Değiştir -->
+  <button id="changeBackground" class="custom-btn top-left">🌄 Arka Plan</button>
 
-    <!-- Sihirli Not Butonu -->
-    <div class="note">
-      <button id="magicNote">🪄 Sihirli Not</button>
-      <div id="noteContent" class="note-content"></div>
-    </div>
-
-    <!-- Kalp Butonu -->
-    <div class="heart-message">
-      <button id="heartBtn">❤️</button>
-      <div id="heartContent" class="note-content"></div>
-    </div>
-
-    <!-- Müzik Kontrol -->
-    <div class="music-controls">
-      <button id="playPause">⏯</button>
-      <button id="next">⏭</button>
-    </div>
-
-    <!-- Mesaj Gönderme Alanı -->
-    <div class="chat">
-      <input type="text" id="messageInput" placeholder="Bir şeyler yaz..." />
-      <button id="sendMessage">Gönder</button>
-      <div id="messages"></div>
-    </div>
+  <!-- Sihirli Not -->
+  <div class="note top-right">
+    <button id="magicNote" class="custom-btn">🪄 Sihirli Not</button>
+    <div id="noteContent" class="note-content hidden"></div>
   </div>
 
-  <!-- Tepki Görseli -->
-  <img id="reactionImage" src="" alt="" class="reaction hidden" />
+  <!-- Kalp Mesajı -->
+  <div class="heart-message top-right">
+    <button id="heartBtn" class="custom-btn">❤️</button>
+    <div id="heartContent" class="note-content hidden"></div>
+  </div>
+
+  <!-- Müzik Kontrol -->
+  <div class="music-controls bottom-left">
+    <button id="playPause" class="custom-btn">⏯</button>
+    <button id="next" class="custom-btn">⏭</button>
+  </div>
 
   <audio id="audio" src=""></audio>
 
